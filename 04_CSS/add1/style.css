@@ -1,0 +1,71 @@
+p{
+    border: 2px;
+    border-radius: 0px 10px;
+    border-style: solid;
+    width: 900px;
+    border-color: lightgray;
+    font-size: 14px;
+}
+.file{
+    font-size: 18px;
+}
+a {
+    color: blue;
+}
+p a[href $='.doc']::before {
+    content: url(../../images/logo-doc.jpg);
+    
+    }
+p a[href $='.pdf']::before {
+    content: url(../../images/logo-pdf.png);
+   
+   }
+  
+p a[href $='.zip']::before {
+    content: url(../../images/logo-zip.png);
+  }
+a[href ^="https://"]::before {
+    content: url(../../images/extref.png);
+  }
+ul{
+    padding-left: 0px;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+li{
+  list-style-type:none;
+  margin-left: 10px;
+}
+.file::before{ 
+    content: url(../../images/logo-list.jpg);
+
+
+  }
+li a:hover[href $='.doc']::after{
+    content: url(../../images/logo-doc.jpg);
+    padding-left: 0px;
+    padding-right: 18px;
+}    
+  
+li a:hover[href $='.pdf']::after {
+    content: url(../../images/logo-pdf.png);
+    padding-left: 0px;
+    padding-right: 18px;
+    
+  }
+li a:hover[href $='.zip']::after {
+    content: url(../../images/logo-zip.png);
+    padding-left: 0px;
+    padding-right: 18px;
+    
+  }
+li a[href $='.doc']::after {
+    content: '';
+    
+  } 
+li a[href $='.pdf']::after {
+    content: '';
+  } 
+li a[href $='.zip']::after {
+   content: '';
+  } 

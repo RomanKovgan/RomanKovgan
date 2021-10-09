@@ -1,0 +1,23 @@
+table, td, th{
+    border: 1px dotted black; 
+    border-collapse: collapse;
+}
+th{
+    background-color: darkgray;
+
+}
+tr:nth-child(2n+1){
+    background-color: lightgray;
+}
+td:nth-child(0n+1){
+    text-align: left;
+    font-weight: bolder;
+}
+tr:nth-child(n+2):hover{
+    background-color: yellow;
+    font-style: italic;
+    cursor: pointer;
+}
+caption{
+    caption-side: bottom;
+}

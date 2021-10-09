@@ -1,0 +1,69 @@
+p{
+    border: 2px;
+    border-radius: 0px 10px;
+    border-style: solid;
+    width: 900px;
+    border-color: lightgray;
+    font-size: 14px;
+}
+.file{
+    font-size: 18px;
+}
+a {
+    color: blue;
+}
+a[href $='.doc'] {
+    padding-left: 18px;
+    background: transparent url(../../images/logo-doc.jpg) no-repeat
+  }
+a[href $='.pdf'] {
+    padding-left: 18px;
+    background: transparent url(../../images/logo-pdf.png) no-repeat
+  }
+a[href $='.zip'] {
+    padding-left: 18px;
+    background: transparent url(../../images/logo-zip.png) no-repeat
+  }
+a[href ^="https://"] {
+    padding-left: 10px;
+    background: transparent url(../../images/extref.png) no-repeat
+  }
+ul{
+    padding-left: 0px;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+.file{ 
+    list-style: url(../../images/logo-list.jpg);
+
+  }
+li a:hover[href $='.doc'] {
+    padding-left: 0px;
+    padding-right: 18px;
+    background: transparent url(../../images/logo-doc.jpg) no-repeat 100% ;    
+  }
+li a:hover[href $='.pdf'] {
+    padding-left: 0px;
+    padding-right: 18px;
+    background: transparent url(../../images/logo-pdf.png) no-repeat 100% ;
+  }
+li a:hover[href $='.zip'] {
+    padding-left: 0px;
+    padding-right: 18px;
+    background: transparent url(../../images/logo-zip.png) no-repeat 100% ;
+  }
+li a[href $='.doc'] {
+    padding-left: 0px;
+    padding-right: 18px;
+    background: none ;
+  } 
+li a[href $='.pdf'] {
+    padding-left: 0px;
+    padding-right: 18px;
+    background: none ;
+  } 
+li a[href $='.zip'] {
+    padding-left: 0px;
+    padding-right: 18px;
+    background: none ;
+  } 

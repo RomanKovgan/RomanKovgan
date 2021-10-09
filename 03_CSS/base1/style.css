@@ -1,0 +1,48 @@
+div{
+    float: left;
+    width: 120px;
+}
+span{border-style: solid;
+    border-radius: 5px;
+    display: block;
+     
+    
+}
+ul{
+    opacity: 0;
+    margin: 0;
+    padding: 0cm;
+    transition: 1s;
+}
+div:hover ul{ 
+    display: block;
+
+} 
+li{border-style: solid;
+    border-radius: 5px;
+    width: 115px;
+    list-style-type: none;
+}
+@media all and (max-width: 900px){
+    div{
+        float: none;
+        width: 250px;
+        clear: both;
+
+    
+    }
+    span{
+        border-style: solid;
+        border-radius: 5px;
+        width: 120px;
+        float: left;
+    }
+    div:hover ul{
+        float: left;
+        transition: 2s;
+        opacity: 1;
+        }
+    
+
+}
+
